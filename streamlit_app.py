@@ -41,5 +41,5 @@ streamlit.dataframe(my_data_rows)
 
 fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
 my_cur = my_cnx.cursor()
-my_cur.execute("insert into FRUIT_LOAD_LIST values ('" + fruit_choice + "')")
+my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
 streamlit.write('Thanks for adding ', fruit_choice)
